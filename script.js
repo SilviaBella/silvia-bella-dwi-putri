@@ -300,17 +300,27 @@ if (menuToggle && navLinks) {
 
     menuToggle.setAttribute("aria-expanded", String(isOpen));
     menuToggle.textContent = isOpen ? "✕" : "☰";
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Tutup menu navigasi" : "Buka menu navigasi"
+    );
   });
 
   navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.textContent = "☰";
-    });
+    link.addEventListener("click", closeMobileMenu);
   });
-}
 
+  if (themeToggle) {
+    themeToggle.addEventListener("click", closeMobileMenu);
+  }
+
+  function closeMobileMenu() {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+    menuToggle.setAttribute("aria-label", "Buka menu navigasi");
+  }
+}
 
 // 6. Tahun footer otomatis
 const currentYear = document.getElementById("currentYear");
