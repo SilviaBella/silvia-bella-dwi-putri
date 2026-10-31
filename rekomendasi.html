@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jelajahi rekomendasi kuliner pilihan bersama Rasa Lokal.">
+
+  <title>Rasa Lokal | Jelajah Kuliner</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="site-header">
+  <nav class="navbar container" aria-label="Navigasi utama">
+
+    <a class="brand" href="index.html" aria-label="Rasa Lokal, beranda">
+      <img src="img/logoooo.png" alt="Logo Rasa Lokal" class="brand-logo">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="rekomendasi.html">Rekomendasi</a>
+      <a href="kontak.html">Kontak</a>
+
+      <button class="theme-toggle" id="themeToggle" type="button"
+        aria-label="Ganti tema">☾ <span>Mode gelap</span></button>
+    </div>
+
+  </nav>
+</header>
+
+
+<main>
+<section class="section menu-section" id="menu">
+<div class="container">
+
+  <!-- JUDUL REKOMENDASI -->
+  <div class="section-heading menu-heading">
+
+    <p class="eyebrow scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0s;">
+      PILIHAN HARI INI
+    </p>
+
+    <h2 class="scroll-animate"
+        data-animation="fadeInUp"
+        style="--delay: 0.3s;">
+      Rekomendasi Kuliner
+    </h2>
+
+    <p class="scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0.6s;">
+      Cari makanan favoritmu berdasarkan nama atau kategori.
+    </p>
+
+  </div>
+
+
+  <!-- FILTER KULINER -->
+  <div class="filter-bar scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0.3s;">
+
+    <label class="search-box" for="searchInput">
+      <span aria-hidden="true">⌕</span>
+      <input id="searchInput" type="search"
+        placeholder="Cari nama kuliner..." autocomplete="off">
+    </label>
+
+    <label class="select-wrap" for="categoryFilter">
+      <span class="sr-only">Filter kategori</span>
+
+      <select id="categoryFilter">
+        <option value="semua">Semua kategori</option>
+        <option value="Makanan berat">Makanan berat</option>
+        <option value="Camilan">Camilan</option>
+        <option value="Minuman">Minuman</option>
+      </select>
+    </label>
+
+  </div>
+
+
+  <!-- DAFTAR KULINER -->
+  <div class="food-grid" id="foodGrid">
+
+    <!-- 3 MAKANAN BERAT -->
+
+    <article class="food-card scroll-animate"
+      data-name="yaminlicious"
+      data-category="Makanan berat"
+      data-animation="fadeInLeft"
+      style="--delay: 0s;">
+
+      <img src="img/mie yamin.jpeg" alt="Mie yamin" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Makanan berat</span>
+        <h3>Yaminlicious</h3>
+        <p>Mie kenyal dengan bumbu gurih manis yang meresap, cocok untuk menemani waktu makan.</p>
+
+        <div class="food-bottom">
+          <strong>Rp20.000</strong>
+          <span>★ 4,8</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="food-card scroll-animate"
+      data-name="geprek nyamber"
+      data-category="Makanan berat"
+      data-animation="fadeInLeft"
+      style="--delay: 0.2s;">
+
+      <img src="img/ayam geprek.jpeg" alt="Geprek dengan sambal" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Makanan berat</span>
+        <h3>Geprek Nyamber</h3>
+        <p>Ayam goreng renyah dengan sambal pedas yang menggugah selera, cocok untuk pecinta makanan pedas.</p>
+
+        <div class="food-bottom">
+          <strong>Rp25.000</strong>
+          <span>★ 4,8</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="food-card scroll-animate"
+      data-name="bakso tjap haji"
+      data-category="Makanan berat"
+      data-animation="fadeInLeft"
+      style="--delay: 0.4s;">
+
+      <img src="img/Bakso.jpeg" alt="Semangkuk bakso" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Makanan berat</span>
+        <h3>Bakso Tjap Haji</h3>
+        <p>Hidangan bakso hangat dengan kuah gurih yang cocok dinikmati kapan saja.</p>
+
+        <div class="food-bottom">
+          <strong>Rp25.000</strong>
+          <span>★ 4,9</span>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- 3 CAMILAN -->
+
+    <article class="food-card scroll-animate"
+      data-name="dubai chewy cookie"
+      data-category="Camilan"
+      data-animation="fadeInLeft"
+      style="--delay: 0s;">
+
+      <img src="img/dubai.jpeg" alt="Cookie cokelat" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Camilan</span>
+        <h3>Dubai Chewy Cookie</h3>
+        <p>Kue cokelat dengan tekstur kenyal dan isian manis yang menggugah selera.</p>
+
+        <div class="food-bottom">
+          <strong>Rp30.000</strong>
+          <span>★ 4,9</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="food-card scroll-animate"
+      data-name="dimsum sembilan ayam"
+      data-category="Camilan"
+      data-animation="fadeInLeft"
+      style="--delay: 0.2s;">
+
+      <img src="img/dimsum.jpeg" alt="Dimsum ayam kukus" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Camilan</span>
+        <h3>Dimsum Sembilan Ayam</h3>
+        <p>Dimsum ayam lembut dengan cita rasa gurih, cocok untuk camilan kapan saja.</p>
+
+        <div class="food-bottom">
+          <strong>Rp20.000</strong>
+          <span>★ 4,8</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="food-card scroll-animate"
+      data-name="takoyaki"
+      data-category="Camilan"
+      data-animation="fadeInLeft"
+      style="--delay: 0.4s;">
+
+      <img src="img/takoyaki.jpeg" alt="Takoyaki" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Camilan</span>
+        <h3>Takoyaki</h3>
+        <p>Bola-bola adonan khas Jepang dengan isian gurita, disajikan dengan saus takoyaki dan taburan katsuobushi.</p>
+
+        <div class="food-bottom">
+          <strong>Rp25.000</strong>
+          <span>★ 4,8</span>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- 3 MINUMAN -->
+
+    <article class="food-card scroll-animate"
+      data-name="matcha ube"
+      data-category="Minuman"
+      data-animation="fadeInLeft"
+      style="--delay: 0s;">
+
+      <img src="img/matcha ube.jpeg" alt="Minuman matcha" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Minuman</span>
+        <h3>Matcha Ube</h3>
+        <p>Perpaduan matcha dengan ube yang memberikan rasa khas dan tampilan menarik.</p>
+
+        <div class="food-bottom">
+          <strong>Rp35.000</strong>
+          <span>★ 4,9</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="food-card scroll-animate"
+      data-name="thai tea"
+      data-category="Minuman"
+      data-animation="fadeInLeft"
+      style="--delay: 0.2s;">
+
+      <img src="img/Thaitea.jpeg" alt="Thai tea dingin" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Minuman</span>
+        <h3>Thai Tea</h3>
+        <p>Teh susu khas Thailand dengan rasa manis, creamy, dan menyegarkan.</p>
+
+        <div class="food-bottom">
+          <strong>Rp10.000</strong>
+          <span>★ 4,6</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="food-card scroll-animate"
+      data-name="coffee latte"
+      data-category="Minuman"
+      data-animation="fadeInLeft"
+      style="--delay: 0.4s;">
+
+      <img src="img/coffe latte.jpeg" alt="Coffee latte" loading="lazy">
+
+      <div class="food-content">
+        <span class="food-category">Minuman</span>
+        <h3>Coffee Latte</h3>
+        <p>Perpaduan espresso dan susu dengan tekstur lembut serta rasa kopi yang seimbang.</p>
+
+        <div class="food-bottom">
+          <strong>Rp25.000</strong>
+          <span>★ 4,8</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+
+  <!-- PERBANDINGAN HARGA -->
+  <section class="price-section" id="perbandingan-harga">
+
+    <div class="price-heading">
+
+      <div>
+        <p class="eyebrow scroll-animate"
+           data-animation="fadeInUp"
+           style="--delay: 0s;">
+          SMART FOOD GUIDE
+        </p>
+
+        <h3 class="scroll-animate"
+            data-animation="fadeInUp"
+            style="--delay: 0.3s;">
+          Bandingkan Pilihanmu<span>.</span>
+        </h3>
+
+        <p class="scroll-animate"
+           data-animation="fadeInUp"
+           style="--delay: 0.6s;">
+          Lihat harga dan rating kuliner untuk menemukan pilihan
+          yang sesuai dengan budget kamu.
+        </p>
+      </div>
+
+      <div class="price-total scroll-animate"
+           data-animation="fadeInRight"
+           style="--delay: 0.4s;">
+        <strong>09</strong>
+        <span>pilihan kuliner</span>
+      </div>
+
+    </div>
+
+
+    <!-- TABEL HARGA -->
+    <div class="price-table-container scroll-animate"
+         data-animation="fadeInUp"
+         style="--delay: 0.3s;">
+
+      <table class="price-table">
+
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Nama Kuliner</th>
+            <th>Kategori</th>
+            <th>Harga</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>01</td>
+            <td class="price-name">Yaminlicious</td>
+            <td><span class="price-tag food-tag">Makanan berat</span></td>
+            <td class="price-value">Rp20.000</td>
+            <td><span class="rating-star">★ 4,8</span></td>
+          </tr>
+
+          <tr>
+            <td>02</td>
+            <td class="price-name">Geprek Nyamber</td>
+            <td><span class="price-tag food-tag">Makanan berat</span></td>
+            <td class="price-value">Rp25.000</td>
+            <td><span class="rating-star">★ 4,8</span></td>
+          </tr>
+
+          <tr>
+            <td>03</td>
+            <td class="price-name">Bakso Tjap Haji</td>
+            <td><span class="price-tag food-tag">Makanan berat</span></td>
+            <td class="price-value">Rp25.000</td>
+            <td><span class="rating-star">★ 4,9</span></td>
+          </tr>
+
+          <tr>
+            <td>04</td>
+            <td class="price-name">Dubai Chewy Cookie</td>
+            <td><span class="price-tag snack-tag">Camilan</span></td>
+            <td class="price-value">Rp30.000</td>
+            <td><span class="rating-star">★ 4,9</span></td>
+          </tr>
+
+          <tr>
+            <td>05</td>
+            <td class="price-name">Dimsum Sembilan Ayam</td>
+            <td><span class="price-tag snack-tag">Camilan</span></td>
+            <td class="price-value">Rp20.000</td>
+            <td><span class="rating-star">★ 4,8</span></td>
+          </tr>
+
+          <tr>
+            <td>06</td>
+            <td class="price-name">Takoyaki</td>
+            <td><span class="price-tag snack-tag">Camilan</span></td>
+            <td class="price-value">Rp25.000</td>
+            <td><span class="rating-star">★ 4,8</span></td>
+          </tr>
+
+          <tr>
+            <td>07</td>
+            <td class="price-name">Matcha Ube</td>
+            <td><span class="price-tag drink-tag">Minuman</span></td>
+            <td class="price-value">Rp35.000</td>
+            <td><span class="rating-star">★ 4,9</span></td>
+          </tr>
+
+          <tr>
+            <td>08</td>
+            <td class="price-name">Thai Tea</td>
+            <td><span class="price-tag drink-tag">Minuman</span></td>
+            <td class="price-value">Rp10.000</td>
+            <td><span class="rating-star">★ 4,6</span></td>
+          </tr>
+
+          <tr>
+            <td>09</td>
+            <td class="price-name">Coffee Latte</td>
+            <td><span class="price-tag drink-tag">Minuman</span></td>
+            <td class="price-value">Rp25.000</td>
+            <td><span class="rating-star">★ 4,8</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <p class="price-note scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0.4s;">
+      ✳ Harga dan rating ditampilkan sebagai informasi referensi kuliner.
+    </p>
+
+  </section>
+
+</div>
+</section>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <a class="brand modern-footer-brand" href="index.html">
+      <img src="img/logoooo.png" alt="Logo Rasa Lokal" class="brand-logo">
+    </a>
+
+    <p class="scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0s;">
+      Silvia Bella Dwi Putri · 231111016
+    </p>
+
+    <p class="scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0.3s;">
+      Temukan inspirasi kuliner dan jelajahi beragam cita rasa
+      dalam satu tempat bersama Rasa Lokal.
+    </p>
+
+    <p class="scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0.6s;">
+      © <span id="currentYear"></span> Rasa Lokal
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jelajahi rekomendasi kuliner pilihan bersama Rasa Lokal.">
+  <title>Rasa Lokal | Jelajah Kuliner</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="beranda-modern.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+     <a class="brand" href="#beranda" aria-label="Rasa Lokal, beranda">
+  <img src="img/logoooo.png" alt="Logo Rasa Lokal" class="brand-logo">
+</a>
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="rekomendasi.html">Rekomendasi</a>
+        <a href="kontak.html">Kontak</a>
+        <button class="theme-toggle" id="themeToggle" type="button"
+          aria-label="Ganti tema">☾ <span>Mode gelap</span></button>
+      </div>
+    </nav>
+  </header>
+   
+<main>
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="beranda">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <p class="eyebrow scroll-animate" data-animation="fadeInDown">
+          JELAJAHI RASA, TEMUKAN CERITA
+        </p>
+
+        <h1 class="scroll-animate" data-animation="fadeInUp">
+         Temukan makanan enak,
+         <span>mulai dari sini.</span>
+        </h1>
+
+        <p class="hero-description scroll-animate" data-animation="fadeInUp">
+          Panduan sederhana untuk menemukan kuliner yang menggugah selera.
+          Dari makanan rumahan sampai jajanan favorit, semuanya punya cerita.
+        </p>
+
+        <div class="hero-actions scroll-animate" data-animation="fadeInUp">
+          <a class="button button-primary" href="rekomendasi.html">
+            Jelajahi kuliner <span>↗</span>
+          </a>
+
+          <button
+            class="button button-outline"
+            id="greetButton"
+            type="button">
+            Yuk, cari makanan!
+          </button>
+        </div>
+
+        <p
+          id="greetingMessage"
+          class="greeting-message"
+          role="status"
+          aria-live="polite">
+        </p>
+
+        <div class="hero-note scroll-animate" data-animation="fadeInUp">
+          <span class="note-dot"></span>
+          Rekomendasi pilihan untuk pencinta kuliner
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+       
+        <div class="hero-image-wrap">
+ <img
+  id="heroSlider"
+  class="hero-image scroll-animate"
+  data-animation="fadeInRight"
+  src="img/headerr.jpeg"
+  alt="Hidangan makanan dengan aneka sayuran dan pelengkap">
+
+    
+
+  <div class="floating-card">
+    <span class="floating-icon">♡</span>
+    <div>
+      <strong>Rasa yang berkesan</strong>
+      <small>Selalu ada yang ingin dicoba</small>
+    </div>
+  </div>
+
+  <div class="image-decoration"></div>
+</div>
+    </div>
+  </section>
+
+
+  <!-- ==================== KATEGORI POPULER ==================== -->
+  <section class="home-categories" id="kategori">
+    <div class="container">
+
+      <div class="modern-section-heading scroll-animate"
+           data-animation="fadeInUp">
+        <div>
+          <p class="eyebrow scroll-animate" data-animation="fadeInUp">
+            MULAI DARI SELERAMU
+          </p>
+
+          <h2 class="scroll-animate" data-animation="fadeInUp">
+            Jelajahi berdasarkan kategori
+          </h2>
+
+          <p class="scroll-animate" data-animation="fadeInUp">
+            Pilih jenis sajian yang lagi kamu inginkan hari ini.
+          </p>
+        </div>
+      </div>
+
+      <div class="category-modern-grid">
+
+        <!-- Kategori Makanan Berat -->
+<a
+  class="category-modern-card category-meal scroll-animate"
+  data-animation="fadeInLeft"
+  style="--delay: 0s;"
+  href="rekomendasi.html">
+
+  <img
+    src="img/ayam geprek.jpeg"
+    alt="Ayam geprek"
+    loading="lazy">
+
+  <span class="category-modern-overlay"></span>
+
+  <span class="category-modern-copy">
+    <small>ISI PERUT DULU</small>
+    <strong>Makanan Berat</strong>
+    <span>Menu mengenyangkan ↗</span>
+  </span>
+</a>
+
+
+<!-- Kategori Camilan -->
+<a
+  class="category-modern-card category-snack scroll-animate"
+  data-animation="fadeInLeft"
+  style="--delay: 0.5s;"
+  href="rekomendasi.html">
+
+  <img
+    src="img/dimsum.jpeg"
+    alt="Dimsum"
+    loading="lazy">
+
+  <span class="category-modern-overlay"></span>
+
+  <span class="category-modern-copy">
+    <small>TEMAN SANTAI</small>
+    <strong>Camilan</strong>
+    <span>Gigitan yang bikin nagih ↗</span>
+  </span>
+</a>
+
+
+<!-- Kategori Minuman -->
+<a
+  class="category-modern-card category-drink scroll-animate"
+  data-animation="fadeInLeft"
+  style="--delay: 1s;"
+  href="rekomendasi.html">
+
+  <img
+    src="img/matcha ube.jpeg"
+    alt="Minuman matcha ube"
+    loading="lazy">
+
+  <span class="category-modern-overlay"></span>
+
+  <span class="category-modern-copy">
+    <small>SEGARKAN HARI</small>
+    <strong>Minuman</strong>
+    <span>Temukan favoritmu ↗</span>
+  </span>
+</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== KULINER PILIHAN ==================== -->
+  <section class="home-picks" id="kuliner-pilihan">
+    <div class="container">
+
+      <div class="modern-section-heading scroll-animate"
+           data-animation="fadeInUp">
+
+        <div>
+         <p class="eyebrow scroll-animate" data-animation="fadeInUp">
+          DARI YANG GURIH SAMPAI MANIS
+        </p>
+
+        <h2 class="scroll-animate" data-animation="fadeInUp">
+         Yang lagi bikin ngiler
+        </h2>
+
+        <p class="scroll-animate" data-animation="fadeInUp">
+         Intip beberapa pilihan kuliner untuk menemani harimu.
+        </p>
+        </div>
+
+        <a class="modern-text-link" href="rekomendasi.html">
+          Jelajahi kuliner <span>↗</span>
+        </a>
+      </div>
+
+
+      <div class="modern-food-grid">
+
+       
+<!-- Kuliner 1: Yaminlicious -->
+<article class="modern-food-card scroll-animate"
+         data-animation="fadeInLeft"
+         style="--delay: 0s;">
+
+  <a class="modern-food-image" href="rekomendasi.html">
+    <img
+      src="img/mie yamin.jpeg"
+      alt="Mie yamin"
+      loading="lazy">
+
+    <span class="modern-food-tag">Favorit</span>
+    <span class="modern-food-arrow">↗</span>
+  </a>
+
+  <div class="modern-food-info">
+    <div class="modern-food-meta">
+      <span>Makanan berat</span>
+      <span class="modern-rating">★ 4,8</span>
+    </div>
+
+    <h3>Yaminlicious</h3>
+    <p>Mie kenyal dengan perpaduan rasa gurih dan manis.</p>
+
+    <div class="modern-food-bottom">
+      <strong>Rp20.000</strong>
+      <span>Pas untuk makan siang</span>
+    </div>
+  </div>
+</article>
+
+
+<!-- Kuliner 2: Geprek Nyamber -->
+<article class="modern-food-card scroll-animate"
+         data-animation="fadeInLeft"
+         style="--delay: 0.5s;">
+
+  <a class="modern-food-image" href="rekomendasi.html">
+    <img
+      src="img/ayam geprek.jpeg"
+      alt="Ayam geprek"
+      loading="lazy">
+
+    <span class="modern-food-tag">Pedas favorit</span>
+    <span class="modern-food-arrow">↗</span>
+  </a>
+
+  <div class="modern-food-info">
+    <div class="modern-food-meta">
+      <span>Makanan berat</span>
+      <span class="modern-rating">★ 4,8</span>
+    </div>
+
+    <h3>Geprek Nyamber</h3>
+    <p>Ayam renyah dengan sambal yang menggugah selera.</p>
+
+    <div class="modern-food-bottom">
+      <strong>Rp25.000</strong>
+      <span>Untuk pencinta pedas</span>
+    </div>
+  </div>
+</article>
+
+
+<!-- Kuliner 3: Dubai Chewy Cookie -->
+<article class="modern-food-card scroll-animate"
+         data-animation="fadeInLeft"
+         style="--delay: 1s;">
+
+  <a class="modern-food-image" href="rekomendasi.html">
+    <img
+      src="img/dubai.jpeg"
+      alt="Dubai chewy cookie"
+      loading="lazy">
+
+    <span class="modern-food-tag">Manisnya pas</span>
+    <span class="modern-food-arrow">↗</span>
+  </a>
+
+  <div class="modern-food-info">
+    <div class="modern-food-meta">
+      <span>Camilan</span>
+      <span class="modern-rating">★ 4,9</span>
+    </div>
+
+    <h3>Dubai Chewy Cookie</h3>
+    <p>Cookie cokelat dengan tekstur kenyal dan rasa manis.</p>
+
+    <div class="modern-food-bottom">
+      <strong>Rp30.000</strong>
+      <span>Teman waktu santai</span>
+    </div>
+  </div>
+</article>
+
+
+<!-- Kuliner 4: Bakso Tjap Haji -->
+<article class="modern-food-card scroll-animate"
+         data-animation="fadeInLeft"
+         style="--delay: 1.5s;">
+
+  <a class="modern-food-image" href="rekomendasi.html">
+    <img
+      src="img/Bakso.jpeg"
+      alt="Semangkuk bakso"
+      loading="lazy">
+
+    <span class="modern-food-tag">Hangat &amp; gurih</span>
+    <span class="modern-food-arrow">↗</span>
+  </a>
+
+  <div class="modern-food-info">
+    <div class="modern-food-meta">
+      <span>Makanan berat</span>
+      <span class="modern-rating">★ 4,9</span>
+    </div>
+
+    <h3>Bakso Tjap Haji</h3>
+    <p>Bakso dengan kuah gurih untuk dinikmati kapan saja.</p>
+
+    <div class="modern-food-bottom">
+      <strong>Rp25.000</strong>
+      <span>Nyaman di segala suasana</span>
+    </div>
+  </div>
+</article>
+
+
+      </div>
+
+
+      <!-- Banner Jelajahi Kuliner -->
+        <div class="modern-discover-banner">
+
+      <div class="discover-sparkle">✳</div>
+
+      <div>
+        <p class="eyebrow scroll-animate"
+          data-animation="fadeInUp"
+          style="--delay: 0s;">
+          MASIH BANYAK YANG BISA DICOBA
+        </p>
+
+        <h2 class="scroll-animate"
+            data-animation="fadeInUp"
+            style="--delay: 0.5s;">
+          Perut punya pilihan, kamu punya cerita.
+        </h2>
+
+        <p class="scroll-animate"
+          data-animation="fadeInUp"
+          style="--delay: 1s;">
+          Temukan lebih banyak makanan, camilan, dan minuman
+          di Rasa Lokal.
+        </p>
+      </div>
+
+      <a class="button button-primary" href="rekomendasi.html">
+        Lihat semua kuliner <span>↗</span>
+      </a>
+
+    </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <a class="brand modern-footer-brand" href="index.html">
+      <img src="img/logoooo.png" alt="Logo Rasa Lokal" class="brand-logo">
+    </a>
+
+    <p class="scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0s;">
+      Silvia Bella Dwi Putri · 231111016
+    </p>
+
+    <p class="scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0.3s;">
+      Temukan inspirasi kuliner dan jelajahi beragam cita rasa
+      dalam satu tempat bersama Rasa Lokal.
+    </p>
+
+    <p class="scroll-animate"
+       data-animation="fadeInUp"
+       style="--delay: 0.6s;">
+      © <span id="currentYear"></span> Rasa Lokal
+    </p>
+
+  </div>
+</footer>
+
+  </main>
+</body>
+</html>
